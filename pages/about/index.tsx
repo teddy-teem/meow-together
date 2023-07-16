@@ -1,19 +1,7 @@
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
-import socketClient from "socket.io-client";
-const SERVER = "http://192.168.0.106:4001";
 
 
 export default function Home() {
-    let [socket, setSocket] = useState<{ [key: string]: any }>({});
-    let [audio, setAudio] = useState<{ [key: string]: any }>({});
-    useEffect(() => {
-        const io = socketClient(SERVER);
-        setSocket(io);
-        setAudio(new Audio());
-    }, [setSocket]);
-
-
     return (
         <div>
             <Head>

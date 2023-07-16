@@ -1,7 +1,4 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
-import socketClient from "socket.io-client";
-const SERVER = "http://192.168.0.106:4001";
 
 export default function Home() {
 
